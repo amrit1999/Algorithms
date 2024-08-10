@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// T = O(n*logn) can go upper bound to O(4*log4*n)
+// T = O(n) can go upper bound to O(4*n)
 int constructSegmentTree(vector<int> &tree, vector<int> &nums, int start, int end, int currInd){
     if(start==end){
         tree[currInd] = nums[start];
