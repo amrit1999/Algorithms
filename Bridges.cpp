@@ -15,7 +15,7 @@ int timer = 1;
                     bridge.push_back({ind, child});
                 }
             }else{
-                low[ind] = min(low[ind], low[child]);
+                low[ind] = min(low[ind], time[child]);
             }
         }
     }
